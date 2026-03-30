@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8f4e00;
+  --color-primary-container: #ffa44f;
+  --color-on-primary: #ffffff;
+  --color-secondary: #246293;
+  --color-secondary-container: #92c9ff;
+  --color-on-secondary: #ffffff;
+  --color-surface: #fdf8f8;
+  --color-on-surface: #1c1b1c;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f7f3f2;
+  --color-surface-container: #f1eded;
+  --color-surface-container-high: #ebe7e7;
+  --color-surface-container-highest: #e6e1e1;
+  --color-inverse-surface: #313030;
+  --color-inverse-on-surface: #f4f0ef;
+  --color-outline-variant: #d7c3ae;
+
+  /* Semantic status tokens — harmonized with warm brand palette */
+  --color-success: #3a6b3a;
+  --color-success-container: #d6edd6;
+  --color-on-success-container: #1a3d1a;
+  --color-warning: #7a5c00;
+  --color-warning-container: #fbefc6;
+  --color-on-warning-container: #3d2d00;
+  --color-error: #8b2e25;
+  --color-error-container: #f5d8d6;
+  --color-on-error-container: #3d100c;
+
+  --font-sans: "Source Sans Pro", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Anton", "Source Sans Pro", sans-serif;
+}
+
+@layer utilities {
+  .kinetic-gradient {
+    /* Replaced soft gradient with solid, stark high-vis orange */
+    background-color: var(--color-primary-container);
+  }
+  .glass-nav {
+    /* Replaced blurry glassmorphism with solid dark surface */
+    background-color: #000000;
+  }
+  .ambient-shadow {
+    /* Brutalist stark shadow instead of soft blur */
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+  }
+  .ambient-shadow-lg {
+    /* Sharp, dramatic offset block shadow */
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
+  }
+  .font-display {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+  }
+}
+
+body {
+  @apply bg-surface text-on-surface font-sans antialiased selection:bg-primary-container selection:text-on-surface;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

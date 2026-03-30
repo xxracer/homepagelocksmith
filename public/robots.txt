@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://carlocksout.com/sitemap.xml
+
+# Crawl rate
+Crawl-delay: 1
+
+# Disallow admin or private areas (si los hay)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow important directories
+Allow: /images/
+Allow: /assets/
+Allow: /*.js$
+Allow: /*.css$
+
+# Block unimportant files
+Disallow: /*.txt$
+Disallow: /*.md$
+Disallow: /*.log$

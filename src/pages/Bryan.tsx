@@ -9,7 +9,6 @@ import {
   Car, Home, Building2, ShieldAlert, Navigation, CheckCircle,
   TreePine, Building, Castle, Store, Trees
 } from 'lucide-react';
-import ChatWidget from '../components/ChatWidget';
 
 const NEIGHBORHOODS = [
   'Downtown Bryan',

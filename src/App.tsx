@@ -476,42 +476,23 @@ function WhyChooseUs() {
 
   return (
     <section aria-labelledby="why-choose-heading" className="py-24 overflow-hidden bg-surface">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col lg:flex-row gap-16 items-center">
-          <div className="lg:w-1/2 relative">
-            <div className="absolute -top-6 -left-6 w-32 h-32 bg-white border-4 border-black shadow-[8px_8px_0px_#000] rounded-none"></div>
-            <img
-              src="https://static.wixstatic.com/media/c5947c_1186f172645947878368e6b50c17188d~mv2.jpg"
-              alt="Professional locksmith technician in College Station TX"
-              className="rounded-none border-4 border-black shadow-[16px_16px_0px_var(--color-primary-container)] relative z-10 w-full object-cover aspect-[4/3]"
-              width="800"
-              height="600"
-              loading="lazy"
-              decoding="async"
-            />
-            <div className="absolute -bottom-10 -right-10 bg-white border-4 border-black p-8 rounded-none shadow-[12px_12px_0px_#000] z-20 hidden md:block">
-              <div className="text-5xl font-black text-black mb-1 font-display">11+</div>
-              <div className="text-xs font-bold uppercase tracking-widest text-black/60">Years in Texas</div>
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <span className="text-white font-display text-2xl tracking-wide uppercase bg-black px-4 py-1 inline-block mb-4">Why Choose Us</span>
+          <h2 id="why-choose-heading" className="font-display text-6xl md:text-[6rem] tracking-tight mb-10 leading-[0.85] text-on-surface uppercase mt-3">
+            THE #1 CHOICE FOR<br/><span className="text-secondary bg-primary-container/20 px-2 line-through decoration-black decoration-8">TEXAS</span><br/>LOCKSMITH SERVICES
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-8">
+          {features.map((feat, idx) => (
+            <div key={idx} className="flex gap-5 bg-white p-6 border-4 border-black shadow-[8px_8px_0px_#000] hover:shadow-[12px_12px_0px_var(--color-primary-container)] hover:-translate-y-1 transition-all">
+              <div className="shrink-0 bg-primary-container border-2 border-black p-3 rounded-none h-fit shadow-[4px_4px_0px_#000]">{feat.icon}</div>
+              <div>
+                <h4 className="font-bold text-lg mb-2 text-on-surface uppercase">{feat.title}</h4>
+                <p className="text-on-surface/70 leading-relaxed font-semibold">{feat.desc}</p>
+              </div>
             </div>
-          </div>
-
-          <div className="lg:w-1/2">
-            <span className="text-white font-display text-2xl tracking-wide uppercase bg-black px-4 py-1 inline-block mb-4">Why Choose Us</span>
-            <h2 id="why-choose-heading" className="font-display text-6xl md:text-[6rem] tracking-tight mb-10 leading-[0.85] text-on-surface uppercase mt-3">
-              THE #1 CHOICE FOR<br/><span className="text-secondary bg-primary-container/20 px-2 line-through decoration-black decoration-8">TEXAS</span><br/>LOCKSMITH SERVICES
-            </h2>
-            <div className="space-y-8">
-              {features.map((feat, idx) => (
-                <div key={idx} className="flex gap-5">
-                  <div className="shrink-0 bg-primary-container border-2 border-black p-3 rounded-none h-fit shadow-[4px_4px_0px_#000]">{feat.icon}</div>
-                  <div>
-                    <h4 className="font-bold text-lg mb-2 text-on-surface">{feat.title}</h4>
-                    <p className="text-on-surface/70 leading-relaxed">{feat.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

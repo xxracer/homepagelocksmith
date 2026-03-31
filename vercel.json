@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/landing",
+      "destination": "https://cledgarlandig.vercel.app/"
+    },
+    {
+      "source": "/landing/:path*",
+      "destination": "https://cledgarlandig.vercel.app/:path*"
+    }
+  ]
+}

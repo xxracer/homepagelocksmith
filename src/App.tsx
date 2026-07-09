@@ -281,7 +281,7 @@ function Hero() {
               className="w-full max-w-sm aspect-[3/4] object-cover object-top border-8 border-black shadow-[16px_16px_0px_var(--color-primary-container)] rounded-none"
             />
             <div className="absolute -bottom-6 -left-6 bg-black text-white p-4 font-display text-xl border-4 border-primary-container shadow-[8px_8px_0px_#000]">
-              <span className="text-primary-container">LICENSE #</span> 00104825
+              <span className="text-primary-container">LICENSE #</span> B30994301
             </div>
           </motion.div>
         </div>
@@ -579,7 +579,7 @@ function FAQ() {
   const faqs = [
     { q: "How long does it take for a locksmith to arrive in College Station?", a: "Our average response time across College Station is 15-20 minutes. We have mobile units strategically stationed throughout the Brazos Valley." },
     { q: "Will opening my car or door cause damage?", a: "No. Our technicians are trained in non-destructive entry techniques. We use specialized tools designed to open locks without compromising your property." },
-    { q: "Are you licensed and insured in Texas?", a: "Yes, CarLocksOut Locksmith is fully licensed, bonded, and insured in Texas. Our license number is 00104825. All our technicians are background-checked and professionally certified." },
+    { q: "Are you licensed and insured in Texas?", a: "Yes, CarLocksOut Locksmith is fully licensed, bonded, and insured in Texas. Our license number is B30994301. All our technicians are background-checked and professionally certified." },
     { q: "Can you program transponder keys on-site?", a: "Absolutely. Our mobile vans are equipped with advanced programming technology, allowing us to cut and program keys for most vehicles on the spot." },
     { q: "Do you offer student discounts?", a: "Yes! We offer 10% off all services for Texas A&M students with valid student ID." }
   ];
@@ -681,7 +681,7 @@ function Footer() {
 
       <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/10 text-center">
         <p className="text-xs text-inverse-on-surface/50">
-          © {currentYear} CarLocksOut Locksmith. All Rights Reserved. | Licensed in Texas #00104825
+          © {currentYear} CarLocksOut Locksmith. All Rights Reserved. | Licensed in Texas #B30994301
         </p>
       </div>
     </footer>
@@ -759,7 +759,7 @@ function InteractiveFeatures() {
 
                     <div className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-on-surface/60">
                       <div className="w-full h-px bg-black/10"></div>
-                      <span className="whitespace-nowrap">TEXAS LICENSE #00104825</span>
+                      <span className="whitespace-nowrap">TEXAS LICENSE #B30994301</span>
                       <div className="w-full h-px bg-black/10"></div>
                     </div>
                   </div>

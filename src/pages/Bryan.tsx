@@ -101,7 +101,7 @@ export default function Bryan() {
             {/* Quick Stats */}
             <div className="flex flex-wrap gap-4 mb-8">
               <StatBadge icon={<Clock className="w-4 h-4" />} text="15-20 Min Response" />
-              <StatBadge icon={<ShieldCheck className="w-4 h-4" />} text="TX Licensed #00104825" />
+              <StatBadge icon={<ShieldCheck className="w-4 h-4" />} text="TX Licensed #B30994301" />
               <StatBadge icon={<Star className="w-4 h-4" />} text="4.9/5 Stars" />
             </div>
 

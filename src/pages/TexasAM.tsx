@@ -115,6 +115,7 @@ export default function TexasAM() {
               <BenefitBadge icon={<Percent className="w-4 h-4" />} text="10% Student Discount" />
               <BenefitBadge icon={<Clock className="w-4 h-4" />} text="10-15 Min Response" />
               <BenefitBadge icon={<MapPinIcon className="w-4 h-4" />} text="Know Campus Layout" />
+              <BenefitBadge icon={<ShieldCheck className="w-4 h-4" />} text="TX Licensed #B30994301" />
             </div>
 
             {/* CTA Buttons */}
